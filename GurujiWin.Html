@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Guruji Hing Reward Check</h2>
+<input id="code" placeholder="Code">
+<button onclick="check()">Check</button>
+<p id="r"></p>
+
+<script>
+const prizes = {
+"GH10001":"₹39 OFF On Next Order save screenshot and show us",
+"GH10002":"₹49 OFF on next order save screenshot and show us",
+"GH10003":"50gm Gurudev Hingpowder Free",
+"GH10004":"100gm Mango Pickle Free"
+};
+
+function check(){
+document.getElementById("r").innerText =
+prizes[document.getElementById("code").value] || "Invalid Code";
+}
+</script>
+</body>
+</html>
